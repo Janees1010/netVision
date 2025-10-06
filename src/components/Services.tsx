@@ -61,7 +61,7 @@ const Services: React.FC = () => {
     }
   ];
 
-  const partners = ["Eastman", "Growatt"];
+  const partners = [{name:"Eastman",logo:"public/eastmen.png"}, {name:"Growatt",logo:"public/growatt.png"}];
 
   return (
     <>
@@ -150,19 +150,31 @@ const Services: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            {partners.map((partner, index) => (
-              <div 
-                key={index}
-                className={`p-6 bg-white rounded-2xl  shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                <h3 className="text-xl font-semibold text-gray-800">{partner}</h3>
-              </div>
-            ))}
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {partners.map((partner, index) => (
+    <div
+      key={index}
+      className={`p-6 flex items-center justify-center bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+      style={{ transitionDelay: `${index * 200}ms` }}
+    >
+      {/* Logo */}
+      {partner.logo && (
+        <img
+          src={partner.logo}
+          alt={partner.name}
+          className="h-16 w-auto object-contain"
+        />
+      )}
+
+      {/* Name */}
+      <h3 className="text-xl font-semibold text-gray-800 ml-4">{partner.name}</h3>
+    </div>
+  ))}
+</div>
+
+
         </div>
       </section>
     </>
