@@ -61,7 +61,7 @@ const Services: React.FC = () => {
     }
   ];
 
-  const partners = [{name:"Eastman",logo:"public/eastmen.png"}, {name:"Growatt",logo:"public/growatt.png"}];
+  const partners = [{name:"Eastman",logo:"/eastmen.png"}, {name:"Growatt",logo:"/growatt.png"}];
 
   return (
     <>
