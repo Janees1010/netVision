@@ -29,34 +29,32 @@ const Services: React.FC = () => {
       icon: Home,
       title: "Solar Power Systems",
       description: "Design, Supply, and Installation of On-Grid, Hybrid, and Off-Grid solar power plants for Resedential, institutions, and businesses.",
-      features: ["On-Grid", "Hybrid", "off-Grid"]
+      features: ["On-grid", "Hybrid", "Off-grid"]
     },
     {
       icon: Building,
-      title: "Solar Lighting & Signaling",
+      title: "Solar Lightings",
       description: "Complete solutions for solar street lights and traffic signaling systems across urban and rural infrastructure.",
       features: [
-        "trafic signal",
-        "pedestial crossing signal system",
-        "fixed mode",
-        "vehical actuated mode",
-        "area trafic control mode "
+        "All in one solar street lights",
+        "Garden lights",
+        "Conventional lights",
       ]
     },
     {
       icon: Settings,
-      title: "Panels & Inverter Supply",
-      description: "Supply and integration of top-tier Mono PERC, TopCon panels, and inverters like string, micro, and hybrid models.",
-      features: ["power electronics", "home invertors", "online ups", "higher kv"]
+      title: "Advances Signalling Systems",
+      description: "Design, supply, and integration of intelligent traffic management solutions ",
+      features: ["Traffic Signal", "⁠Pedestial Crossing Signal System", "⁠Fixed Mode", "Vehicle Actuated Mode","⁠Area Traffic Control Mode"]
     },
     {
       icon: Calculator,
-      title: "Government Subsidy",
+      title: "Government Subsidy and Bank Loans",
       description: "Support for PM Surya Ghar Yojana, including documentation, bank tie-ups, and subsidy disbursement guidance.",
       features: [
-        "loan assistant support in low intetest rate subsidy",
-        "quick and quality instalation",
-        "regular maintainance support",
+        "Loan Assistant Support in Low Intetest Rate Subsidy",
+        "Quick and Quality Instalation",
+        "Regular Maintainance Support",
       ]
     }
   ];
@@ -75,9 +73,9 @@ const Services: React.FC = () => {
               Our Services
             </h2>
             <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               From solar power plant Installations to traffic signaling and government-subsidized rooftop systems, Net Vision delivers complete solar solutions you can trust.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

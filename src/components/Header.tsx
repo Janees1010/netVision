@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,20 +29,37 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <img
-              src="/logo.png" // replace with your actual filename (e.g., /logo.svg, /logo.webp)
-              alt="NetVision Logo"
-              className="h-12 w-12 sm:h-8 sm:w-8 transition-colors duration-300"
-            />
-            <span
-              className={`text-lg sm:text-xl font-bold transition-colors duration-300 ${
-                isScrolled ? "text-green-800" : "text-white"
-              }`}
-            >
-              Net   Vision 
-            </span>
-          </div>
+<div className="flex items-center space-x-3">
+  <img
+    src="/logo.png"
+    alt="Net Vision Logo"
+    style={{
+      height: '56px',
+      width: '56px',
+      objectFit: 'contain',
+      transition: 'transform 0.3s ease',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  />
+
+  <span
+    style={{
+      fontFamily: "'Cinzel', 'Times New Roman', serif",
+      fontWeight: 700,
+      fontSize: '1.6rem',
+      letterSpacing: '0.5px',
+      color: isScrolled ? '#14532d' : '#ffffff',
+      transition: 'color 0.3s ease, transform 0.3s ease',
+      transform: 'skewX(-6deg)', // <-- slight right tilt
+      display: 'inline-block',
+    }}
+  >
+    NET VISION
+  </span> 
+</div>
+
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">

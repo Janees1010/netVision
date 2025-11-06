@@ -28,7 +28,7 @@ const About: React.FC = () => {
     {
       icon: Award,
       title: 'Over a Decade of Experience',
-      description: 'Established in 2011 with 13+ years of solar expertise across Kerala and Tamil Nadu.',
+      description: 'Established in 2011 with 13 to 14+ years of solar expertise across Kerala and Tamil Nadu.',
     },
     {
       icon: Users,
@@ -102,7 +102,7 @@ const About: React.FC = () => {
             </div>
             <div className="grid grid-cols-2 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-yellow-400 mb-2">13+ yrs</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-2">14+ yrs</div>
                 <div className="text-base opacity-90">Industry Experience</div>
               </div>
               <div>
