@@ -48,20 +48,20 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+91 98956 12060 / +91 94463 35159",
+      details: "+91 989 5612 060 / +91 907 2050 067",
       subtext: "Mon–Sat business hours"
     },
     {
       icon: MapPin,
       title: "Visit Us",
       details:
-        "TC-8/1125(2), Nandhanam, Mythri Nagar, Valiyavila,\nThirumala P.O., Thiruvananthapuram, Kerala – 695 006",
+        "VNRA 160 Bethel, Valiyavila, Vattiyoorkavu P.O Thiruvanathapuram, Kerala 695013",
       subtext: "Reach us for appointments"
     },
     {
       icon: Clock,
       title: "Working Hours",
-      details: "Mon–Sat: 9:00 AM – 6:00 PM",
+      details: "Mon–Sat: 9:00 AM – 6:00 PM", 
       subtext: "Closed on Sundays"
     },
     // {

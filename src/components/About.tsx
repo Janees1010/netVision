@@ -28,7 +28,7 @@ const About: React.FC = () => {
     {
       icon: Award,
       title: 'Over a Decade of Experience',
-      description: 'Established in 2011 with 13 to 14+ years of solar expertise across Kerala and Tamil Nadu.',
+      description: 'Established in 2011 with 14+ years of solar expertise across Kerala and Tamil Nadu.',
     },
     {
       icon: Users,

@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone size={16} className="text-green-400 flex-shrink-0" />
-                <span>+91 98956 12060 / +91 94463 35159</span>
+                <span>+91 9895612060 / +91 9072050067</span>
               </div>
               {/* <div className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-400 flex-shrink-0" />
@@ -107,8 +107,8 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-3 text-gray-300">
                 <MapPin size={16} className="text-green-400 flex-shrink-0 mt-1" />
                 <span>
-                  TC-8/1125(2), Nandhanam, Mythri Nagar, Valiyavila,<br />
-                  Thirumala P.O., Thiruvananthapuram, Kerala – 695 006
+                  VNRA 160 Bethel, Valiyavila,<br />
+                  Vattiyoorkavu P.O Thiruvanathapuram, Kerala 695013,
                 </span>
               </div>
             </div>
