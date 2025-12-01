@@ -59,7 +59,12 @@ const Services: React.FC = () => {
     }
   ];
 
-  const partners = [{name:"Eastman",logo:"/eastmen.png"}, {name:"Growatt",logo:"/growatt.png"}];
+  const partners = [{name:"Eastman",logo:"/eastmen.png"},
+     {name:"Growatt",logo:"/growatt.png"},{name:"Keltron",logo:"/keltron.png"},
+     {name:"Schneider Electric",logo:"/schneider-electric.jpg"},
+     {name:"Exide",logo:"/exide.png"},
+     {name:"Socomec",logo:"/socomec.png"},
+    ];
 
   return (
     <>
@@ -157,13 +162,14 @@ const Services: React.FC = () => {
       }`}
       style={{ transitionDelay: `${index * 200}ms` }}
     >
-      {/* Logo */}
       {partner.logo && (
-        <img
-          src={partner.logo}
-          alt={partner.name}
-          className="h-16 w-auto object-contain"
-        />
+        <div className="h-20 w-20 flex items-center justify-center flex-shrink-0">
+          <img
+            src={partner.logo}
+            alt={partner.name}
+            className="h-full w-full object-contain"
+          />
+        </div>
       )}
 
       {/* Name */}

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 const Hero: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = ['/netvision-3.jpeg', '/netvision-2.jpeg'];
+  const images = ['/netvision-3.jpeg', '/netvision-2.jpeg','/netvision-1.jpeg','/netvision-4.jpeg','/netvision-5.jpeg','/netvision-6.jpeg'];
 
   useEffect(() => {
     const interval = setInterval(() => {

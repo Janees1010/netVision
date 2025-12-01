@@ -38,7 +38,7 @@ const About: React.FC = () => {
     {
       icon: Zap,
       title: 'Complete Solar Solutions',
-      description: 'From on-grid to hybrid and off-grid systems',
+      description: 'From on-grid, off-grid and hybrid systems',
     },
     {
       icon: Shield,

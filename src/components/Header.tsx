@@ -24,18 +24,18 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-white shadow-lg" : "bg-white"
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-2 sm:py-2">
         <div className="flex items-center justify-between">
 <div className="flex items-center space-x-3">
   <img
     src="/logo.png"
     alt="Net Vision Logo"
     style={{
-      height: '56px',
-      width: '56px',
+      height: '66px',
+      width: '66px',
       objectFit: 'contain',
       transition: 'transform 0.3s ease',
     }}
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       fontWeight: 700,
       fontSize: '1.6rem',
       letterSpacing: '0.5px',
-      color: isScrolled ? '#14532d' : '#ffffff',
+      color: isScrolled ? '#14532d' : '#14532d',
       transition: 'color 0.3s ease, transform 0.3s ease',
       transform: 'skewX(-6deg)', // <-- slight right tilt
       display: 'inline-block',
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => scrollToSection("home")}
               className={`transition-colors duration-300 hover:text-green-600 text-sm lg:text-base ${
-                isScrolled ? "text-gray-800" : "text-white"
+                isScrolled ? "text-gray-800" : "text-gray-800"
               }`}
             >
               Home
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => scrollToSection("about")}
               className={`transition-colors duration-300 hover:text-green-600 text-sm lg:text-base ${
-                isScrolled ? "text-gray-800" : "text-white"
+                isScrolled ? "text-gray-800" : "text-gray-800"
               }`}
             >
               About
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => scrollToSection("services")}
               className={`transition-colors duration-300 hover:text-green-600 text-sm lg:text-base ${
-                isScrolled ? "text-gray-800" : "text-white"
+                isScrolled ? "text-gray-800" : "text-gray-800"
               }`}
             >
               Services
